@@ -1,0 +1,68 @@
+/* Общий контейнер форм */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Заголовок формы */
+.title {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Стиль для поле ввода */
+.input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+/* Эффект изменения цвета границы полей ввода при фокусе */
+.input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.input::placeholder {
+}
+
+/* Кнопка добавления песни */
+.button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none; /* Убираем стандартные границы */
+    padding: 12px; /* Убираем padding в кнопке */
+    border-radius: 4px; /* Радиус границ для кнопки */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Немного увеличиваем кнопку при наведении */
+}
+
+/* Сообщение об успешном добавлении */
+.successMessage {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Ошибка при добавлении */
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
